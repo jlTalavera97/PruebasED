@@ -10,6 +10,7 @@ public class Curso {
 	private List<Persona> listaAlumnos;
 
 
+
 	/**
 	 * Method that removes a student.
 	 * @param dni : student´s DIN
@@ -70,5 +71,12 @@ public class Curso {
 		for (Persona persona : listaAlumnos) {
 			System.out.println(persona);
 		}
+	}
+	/**
+	 * Method that returns the list of students
+	 * @return Returns the complete list of students
+	 */
+	public List<Persona> getListaAlumnos() {
+		return listaAlumnos;
 	}
 }
