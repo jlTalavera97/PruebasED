@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"ed.examen.modelo","l":"Persona"}]

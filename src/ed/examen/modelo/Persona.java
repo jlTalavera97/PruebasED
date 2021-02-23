@@ -11,7 +11,12 @@ public class Persona {
 
 		
 		
-	
+		/**
+		 * Constructor for persona.
+		 * @param dni : NID number.
+		 * @param nombre : Name.
+		 * @param apellido1 : Surname.
+		 */
 		public Persona(String dni, String nombre, String apellido1) {
 			this.dni = dni;
 			this.nombre = nombre;
@@ -19,13 +24,17 @@ public class Persona {
 		}
 		
 		
-		
+		/**
+		 * @return Returns the NID number.
+		 */
 		public String getDni() {
 			return dni;
 		}
 		
-		
-	
+		/**
+		 * @param dni : Sets a NID number.
+		 * @throws Exception : Checks that the NID number is correct, if not it throws an Exception.
+		 */
 		public void setDni(String dni) throws Exception {
 			//comprobacion de si el ultimo caracter es una letra
 			if(Character.isLetter(dni.charAt(dni.length()-1))) {
@@ -36,18 +45,24 @@ public class Persona {
 		}
 		
 		
-		
+		/**
+		 * @return Returns the name.
+		 */
 		public String getNombre() {
 			return nombre;
 		}
 		
 		
-		
+		/**
+		 * @param nombre : Sets a new name.
+		 */
 		public void setNombre(String nombre) {
 			this.nombre = nombre;
 		}
 		
-	
+		/**
+		 * @return Returns the Surname.
+		 */
 		public String getApellido1() {
 			return apellido1;
 		}
