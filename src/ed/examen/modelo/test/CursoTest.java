@@ -1,4 +1,8 @@
 package ed.examen.modelo.test;
+/**
+ * @author jlTalavera97
+ * @version 1.0
+ */
 
 import static org.junit.jupiter.api.Assertions.*;
 

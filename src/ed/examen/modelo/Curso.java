@@ -5,6 +5,10 @@ package ed.examen.modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author jlTalavera97
+ * @version 1.0
+ */
 public class Curso {
 
 	private List<Persona> listaAlumnos;

@@ -8,6 +8,10 @@ import ed.examen.modelo.Curso;
 import ed.examen.modelo.Persona;
 
 public class Principal {
+	/**
+	 * @author jlTalavera97
+	 * @version 1.0
+	 */
 
 	static Curso c;
 	
