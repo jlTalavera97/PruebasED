@@ -1,10 +1,10 @@
 package ed.examen.modelo.test;
+import static org.junit.jupiter.api.Assertions.*;
+
 /**
  * @author jlTalavera97
  * @version 1.0
  */
-
-import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
 
@@ -56,7 +56,7 @@ class CursoTest {
 
 	@Test
 	void testNumeroAlumnos() {
-		assertEquals(c1.getListaAlumnos(), c1.getListaAlumnos());
+		assertEquals(c1.numeroAlumnos(), c1.getListaAlumnos().size());
 	}
 
 }
