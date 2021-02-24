@@ -4,8 +4,8 @@ package ed.examen.app;
 
 import java.util.Scanner;
 
-import ed.examen.modelo.Curso;
-import ed.examen.modelo.Persona;
+import ed.examen.modelo.Grade;
+import ed.examen.modelo.Person;
 
 public class Principal {
 	/**
@@ -13,10 +13,10 @@ public class Principal {
 	 * @version 1.0
 	 */
 
-	static Curso c;
+	static Grade c;
 	
 	public static void main(String[] args) {
-		c = new Curso();
+		c = new Grade();
 		Integer opcion = mostrarMenuYRecogerOpcion();
 		while(opcion!=0) {
 			procesarOpcion(opcion);
@@ -46,21 +46,21 @@ public class Principal {
 			System.out.print("Interoducir apellido1: ");
 			String inApellido1= s.nextLine();
 			
-			c.aniadirAlumno(new Persona(inDNI, inNombre, inApellido1));
+			c.addStudent(new Person(inDNI, inNombre, inApellido1));
 			
 		}else if (opcion==2) {//eliminar
 			System.out.println("Introducir dni de usuario a eliminar: ");
 			String inDNI = s.nextLine().trim();
 			try {
-				c.eliminarAlumno(inDNI);
+				c.deleteStudent(inDNI);
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}else if(opcion==3) {//contar
-			System.out.println(c.numeroAlumnos());
+			System.out.println(c.studentCount());
 		}else if (opcion==4) {//todos
-			c.mostrarTodos();
+			c.printStudents();
 		}
 	}
 }
